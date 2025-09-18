@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact & Booking - DentalCare</title>
+  <link rel="stylesheet" href="contact.css" />
+  <script defer src="contact.js"></script>
+</head>
+<body>
+ <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <img src="https://img.icons8.com/ios-filled/50/000000/tooth.png" alt="DentalCare Logo" />
+        <span>Velora smile</span>
+      </div>
+      <nav class="nav">
+        <a href="dentalcare.html" class="nav-link ">Home</a>
+        <a href="contact.html" class="nav-link active">Contact & Booking</a>
+      </nav>
+     
+    </div>
+  </header>
+  <!-- Flatpickr CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+ <main>
+  <div class="container main-container">
+    <h1>Contact & Booking</h1>
+    <p class="lead">We're here to help. Reach out or book your appointment online.</p>
+
+    <div class="content-grid">
+      <!-- Clinic Info -->
+      <section class="clinic-info">
+        <h2>Clinic Information</h2>
+        <ul class="info-list">
+          <li>📞 +44 20 7946 0123</li>
+          <li>💬 WhatsApp: +44 20 7946 0123</li>
+          <li>✉️ contact@dentalcarelondon.com</li>
+          <li>📍 25 High Street, London, UK</li>
+        </ul>
+        <div class="map-container" aria-label="Clinic location map">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.1125%2C51.5032%2C-0.1055%2C51.5065&layer=mapnik&marker=51.5049%2C-0.109"
+            style="border:0"
+            allowfullscreen=""
+            loading="lazy"
+            width="100%"
+            height="260"
+            title="DentalCare Clinic Location"
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Booking Form -->
+      <section class="booking-form" id="booking-form">
+        <h2>Book an Appointment</h2>
+        <form id="bookingForm" novalidate>
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="John Doe" required />
+
+          <label for="phoneNumber">Phone Number</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+44 20 7946 0123"
+            pattern="^\+?[0-9\s\-]{7,15}$" required />
+
+          <!-- Custom Dropdown -->
+         <label for="service">Service</label>
+<div class="custom-select" id="customService">
+  <div class="custom-select-trigger">
+    <span>Select a service</span>
+    <i class="arrow"></i>
+  </div>
+  <div class="custom-options">
+    <span class="custom-option" data-value="general_consultation">General Consultation</span>
+    <span class="custom-option" data-value="dental_cleaning">Dental Cleaning</span>
+    <span class="custom-option" data-value="whitening">Teeth Whitening</span>
+    <span class="custom-option" data-value="orthodontics">Orthodontics</span>
+    <span class="custom-option" data-value="emergency">Emergency Care</span>
+  </div>
+</div>
+<input type="hidden" name="service" id="service" required />
+
+          <label for="preferredDate">Preferred Date</label>
+<input type="text" id="preferredDate" name="preferredDate" placeholder="Select a date" required />
+
+          <button type="submit" class="btn-submit">Send Request</button>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+  </div>
+</main>
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-column">
+        <div class="footer-logo">velora smile</div>
+        <p>Your Smile, Our Priority. Providing complete dental care in London.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact & Booking</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>📍 25 High Street, London, UK</li>
+          <li>📞 +44 20 7946 0123</li>
+          <li>✉️ contact@dentalcarelondon.com</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Opening Hours</h3>
+        <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+        <p>Saturday: 10:00 AM - 4:00 PM</p>
+        <p>Sunday: Closed</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 velora smile – London. All rights reserved.</div>
+  </footer>
+  <!-- Flatpickr JS -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+</body>
+</html>

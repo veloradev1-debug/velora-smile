@@ -1,0 +1,635 @@
+/* contact.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.5;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+/* Header */
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #eaeaea;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #007bff;
+}
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-link {
+  font-weight: 600;
+  padding: 0.5rem 0;
+  color: #333;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+.nav-link:hover,
+.nav-link.active {
+  border-color: #007bff;
+  color: #007bff;
+}
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 0.6rem 1.25rem;
+  transition: background-color 0.3s ease;
+}
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+.btn-secondary {
+  background-color: #d1f0ee;
+  color: #007bff;
+}
+.btn-secondary:hover {
+  background-color: #a0e0d8;
+}
+
+
+
+/* Main */
+
+/* Main */
+main {
+  max-width: 1100px;
+  margin: 2rem auto 4rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+.lead {
+  color: #555;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Grid */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+/* Clinic info card */
+.clinic-info {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.8rem 1.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e6f0f8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clinic-info:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.clinic-info h2 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  color: #0077b6;
+  border-left: 4px solid #00b4d8;
+  padding-left: 0.5rem;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.info-list li {
+  background: #f8fbfd;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #e3edf7;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Map */
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  height: 260px;
+}
+
+/* Booking form card */
+.booking-form {
+  background: #fff;
+  border-radius: 14px;
+  padding: 2rem 2.2rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e6f0f8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.booking-form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.booking-form h2 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #0077b6;
+}
+
+/* Fields */
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+  border: 1.5px solid #d6d9de;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover & focus effects */
+.booking-form select:hover,
+.booking-form input[type="date"]:hover,
+.booking-form input:hover {
+  border-color: #00b4d8;
+}
+
+.booking-form select:focus,
+.booking-form input[type="date"]:focus,
+.booking-form input:focus {
+  border-color: #00b4d8;
+  outline: none;
+  box-shadow: 0 0 7px rgba(0, 180, 216, 0.35);
+  background: #f9feff;
+}
+
+/* Custom arrow for select */
+.booking-form select {
+  cursor: pointer;
+  appearance: none;
+  background: url("data:image/svg+xml,%3Csvg fill='none' stroke='%2300b4d8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' viewBox='0 0 24 24'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E")
+    no-repeat right 1rem center/1.1em;
+}
+
+/* Submit button */
+.btn-submit {
+  width: 100%;
+  background: #00b4d8;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 0.5rem;
+}
+
+.btn-submit:hover {
+  background: #0096c7;
+  transform: scale(1.02);
+}
+
+.form-message {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #007bff;
+}
+
+/* ✅ إصلاح الخروج من الشاشة في الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ✅ إصلاح العرض للشاشات الصغيرة جدًا */
+@media (max-width: 400px) {
+  .content-grid {
+    gap: 1.5rem;
+  }
+  .clinic-info,
+  .booking-form {
+    padding: 1rem 1rem;
+  }
+  main {
+    padding: 0 0.5rem;
+  }
+}
+/* Custom Dropdown */
+/* Custom Dropdown */
+.custom-select {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  font-family: inherit;
+}
+
+.custom-select-trigger {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1.5px solid #d6d9de;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+.custom-select-trigger:hover {
+  border-color: #00b4d8;
+}
+.custom-select.open .custom-select-trigger {
+  border-color: #00b4d8;
+  box-shadow: 0 0 6px rgba(0,180,216,0.35);
+}
+
+/* Arrow */
+.custom-select .arrow {
+  border: solid #0077b6;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+  margin-left: 8px;
+}
+.custom-select.open .arrow {
+  transform: rotate(-135deg);
+}
+
+/* Options Box */
+.custom-options {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1.5px solid #d6d9de;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+  transition: all 0.25s ease;
+  z-index: 15;
+}
+.custom-select.open .custom-options {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Each option */
+/* Each option */
+.custom-option {
+  display: block;              /* يجعل كل خيار يأخذ عرض كامل */
+  width: 100%;
+  padding: 0.9rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #333;
+  background: #fff;
+  transition: background 0.25s ease, color 0.25s ease;
+  text-align: left;            /* النص يبدأ من اليسار */
+}
+
+.custom-option:hover {
+  background: #f0fbff;
+  color: #0077b6;
+}
+
+.custom-option:not(:last-child) {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+
+
+
+
+
+
+/* Footer */
+/* Footer */
+footer {
+  background: #222938;
+  color: #adb5bd;
+  padding: 1.5rem 1.5rem;
+  font-size: 1rem; /* كان 0.9rem → أكبر قليلاً */
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+
+.footer-logo {
+  font-weight: 700;
+  font-size: 1.25rem; /* كبرنا شوي */
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.footer-column h3 {
+  font-weight: 700;
+  color: #f8f9fa;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem; /* أكبر قليلاً */
+}
+
+.footer-column ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.25rem;
+  line-height: 1.5;   /* مريح أكثر للقراءة */
+  font-size: 1rem;    /* كبرنا الخط */
+}
+
+.footer-column ul li a {
+  color: #adb5bd;
+  text-decoration: none;
+  font-size: 1rem; /* موحد مع باقي المحتوى */
+}
+
+.footer-column ul li a:hover {
+  color: #007bff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1.2rem;
+  font-size: 0.85rem; /* كبرنا قليلاً */
+  color: #6c757d;
+}
+
+
+
+
+
+
+
+/* تقويم أصغر ومرتب */
+.flatpickr-calendar {
+  font-size: 0.85rem;
+  width: 270px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 180, 216, 0.15);
+  border: 1px solid #e0f7fa;
+}
+
+/* اليوم العادي */
+.flatpickr-day {
+  max-width: 32px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  color: #333;
+}
+
+/* اليوم الحالي */
+.flatpickr-day.today {
+  background: #e0faff;   /* سماوي فاتح */
+  border: 1px solid #90e0ef;
+  color: #0077b6;
+  font-weight: 600;
+}
+
+/* اليوم المختار */
+.flatpickr-day.selected {
+  background: #00b4d8;   /* سماوي أزرق */
+  border-color: #00b4d8;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Hover */
+.flatpickr-day:hover {
+  background: #caf0f8;   /* أزرق فاتح جدًا */
+  color: #0077b6;
+}
+
+/* رأس التقويم (الشهر والسنة) */
+.flatpickr-months .flatpickr-month {
+  font-size: 0.9rem;
+  color: #0077b6;
+  font-weight: 600;
+}
+
+/* الأسهم */
+.flatpickr-prev-month, 
+.flatpickr-next-month {
+  color: #0096c7;
+  transition: 0.2s;
+}
+
+.flatpickr-prev-month:hover, 
+.flatpickr-next-month:hover {
+  color: #0077b6;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+  h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+}
+/* ✅ إصلاح الخروج من الشاشة في الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+   }
+@media (max-width: 660px) {
+  .header-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .nav {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+  h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+  
+  
+}
+@media (max-width: 480px) {
+  header {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  nav {
+    width: 100%;
+    text-align: center;
+  }
+  nav a {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+  .btn-appointment {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+ 
+  h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  text-align: center;
+  }
+  /* إصلاح العرض للشاشات الصغيرة جدًا */
+
+ .content-grid {
+    gap: 1.5rem; /* قلل المسافة */
+  }
+
+  .clinic-info,
+  .booking-form {
+    padding: 1rem 1rem; /* قلل الـ padding */
+  }
+
+  main {
+    padding: 0 0.5rem; /* قلل الهوامش يمين ويسار */
+  }
+  .flatpickr-calendar {
+    transform: scale(0.85);   /* تصغير الحجم */
+    transform-origin: top center;
+  }
+
+  .flatpickr-day {
+    max-width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 0.75rem;
+  }
+
+  .flatpickr-months .flatpickr-month {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
+ @media (max-width: 350px) {
+  .doctor-info {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .header-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .nav {
+    flex-basis: 100%;
+    justify-content: center;
+    gap: 5px;
+  }
+   h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+}
